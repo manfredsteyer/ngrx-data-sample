@@ -1,0 +1,15 @@
+<div class="container">
+  <p>
+    Loading: {{ loading$ | async }}
+  </p>
+
+  <p>
+    Passengers: {{ passengers$ | async | json }}
+  </p>
+
+  <button class="btn btn-default" (click)="load()">Load</button>
+  &nbsp;
+  <button class="btn btn-default" (click)="add()">Add</button>
+  &nbsp;
+  <button class="btn btn-default" (click)="filter()">Filter</button>
+</div>
